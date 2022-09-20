@@ -1,0 +1,22 @@
+"""I. feladat 
+Kérd be egy felhasználó életkorát, és döntsd el hogy:
+1. Fogyaszthat-e legálisan alkoholt Amerikában? (21 év)
+2. Vásárolhat-e dohányterméket Magyarországon? (18 év)
+3. Szerezhet-e jogosítványt? (16 év)
+4. Megnézheti-e egyedül a Shrek 2-t?"""
+
+def main():
+    age = int(input("Add meg az életkorod: "))
+
+    if age >= 21:
+        print("Fogyaszthatsz alkoholt Amerikában, vásárolhatsz dh-ban Mo-n, szerezhetsz jogosítványt és megnézheted a Shrek II-t")
+    elif age >=18:
+        print('Vásárolhatsz dh-ban Mo-n, szerezhetsz jogosítványt és megnézheted a Shrek II-t')
+    elif age>=16:
+        print('Szerezhetsz jogosítványt és megnézheted a Shrek II-t')
+    elif age>6:
+        print("Megnézheted a Shrek II-t :)")
+    else:
+        print('Nagyon fiatal vagy még mindenhez :c')
+if __name__ == "__main__":
+    main()
