@@ -1,0 +1,38 @@
+"""## II. feladat
+Implementálj 3 tetszőleges matematikai képletet!
+pl.: pitagorasz-tétel, sinus/cosinus/tangens háromszögben, másodfukú egyenlet megoldóképlet"""
+
+import telnetlib
+
+
+def main():
+    
+    print("Kérlek válassz a 3 képlet közül!\n (Hatványozás, Diszkrimináns, Háromszög szerkesztés ) ")
+    
+    valasz=input("Választásod: ")
+    
+    if valasz=='Hatványozás' or valasz=="hatványozás" or valasz=="hatvanyozas":
+        print("***HATVÁNYOZÁS*** ")
+        hatv=int(input('Add meg a hatványozni kívánt számot: '))
+        print('A hatványozás eredménye: {0}'.format(hatv*hatv))   
+    elif valasz=='Diszkrimináns' or valasz=='diszkrimináns' or valasz=='diszkriminans':
+        print('***DISZKRIMINÁNS***')
+        a=int(input("Add meg az 'a' értékét: "))
+        b=int(input("Add meg az 'b' értékét: "))
+        c=int(input("Add meg az 'c' értékét: "))
+        print('A diszkrimináns eredménye: {0}'.format(b^2-4*a*c))
+    elif valasz=='Háromszög szerkesztés' or valasz=='háromszög szerkesztés' or valasz=='haromszog szerkesztes':
+        print('***HÁRÖMSZÖG SZERKESZTÉS***')
+        a=int(input("Add meg az 'a' oldal értékét: "))
+        b=int(input("Add meg az 'b' oldal értékét: "))
+        c=int(input("Add meg az 'c' oldal értékét: "))
+        if a+b>c and a+c>b and b+c>a:
+            print("A háromszög szerkeszthető! c:")
+        else:
+            print("A háromszög nem szerkeszthető! :c")
+    else:
+        print("A kért feladat parancsa nem található. Kérlek ellenőrizd és próbáld újra!")
+        
+                 
+if __name__ == "__main__":
+    main()
