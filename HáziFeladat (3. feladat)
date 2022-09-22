@@ -1,0 +1,21 @@
+"""A H2O mintájára készíts egy programot, amely megadja a keletkező konyhasó és a maradék atomok mennyiségét a Na és a Cl2 reakciójából! Eredeti képlet: 2Na + Cl2 = 2 NaCl"""
+
+def main():
+    print("Adja meg az értékeket!\n")
+    Na=int(input("Adja meg a nátrium értékét: "))
+    Cl=int(input("Adja meg a klór értékét: "))
+    NaCl=0
+    FNa=0
+    FCl=0
+    if Na =='Cl':
+        NaCl=(Na+Cl)*2
+    elif Na>Cl:
+        nacl=(Na+Cl)*2
+        FeleslegesNa=(Na-Cl)*2
+    else:
+        NaCl=Na
+        FCl=(Na+Cl)*2-Na
+    print("Létrejött konyhasó: {0}\nMaradék nátriumatom: {1}\nMaradék klóratom: {2}\n" .format(NaCl,FNa,FCl))
+    
+if __name__ == "__main__":
+    main()
